@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSSH</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/4.19.0/xterm.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/xterm/4.19.0/xterm.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.min.js"></script>
+</head>
+<body>
+    <div id="login-form">
+        <h2>WebSSH Login</h2>
+        <input id="hostname" placeholder="Hostname" type="text"><br>
+        <input id="username" placeholder="Username" type="text"><br>
+        <input id="password" placeholder="Password" type="password"><br>
+        <input id="port" placeholder="Port (default 22)" type="number"><br>
+        <button onclick="connect()">Connect</button>
+    </div>
+    <div id="terminal" style="display: none;"></div>
+
+    <script src="/static/js/terminal.js"></script>
+</body>
+</html>
